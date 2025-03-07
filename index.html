@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon"
+        href="https://crushlogo.com/files/preview/800x800/11683635893fyddltmtztsrzuldd062dyprytcgvqvswm5ea9evcwiu9rytxpmcvzcnve99e6itcvicijln721ytutwnddzmgfjlpzkvhdwxzbw.png"
+        type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.1.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>foodpanda</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <a class="profile-icon" href=""><i class="fa-regular fa-user"></i></a>
+            <div class="navbar-one">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv8DTzroSUojgwiIRK8WHRle9zz66hth1_VQ&s"
+                    alt="Foodpanda logo">
+                <h1>foodpanda</h1>
+            </div>
+            <div class="navbar-two">
+                <button class="my-button-two" style="width: 100px;" onclick="navTohome()">Home</button>
+                <button class="my-button-one" onclick="navToAdminpanel()">Admin Panel</button>
+                <button class="my-button-two" onclick="navToResturant()">Restaurants</button>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </nav>
+
+
+
+
+        <div class="text-image-container">
+            <div class="text-container">
+                <div class="text-button">
+                    <span>It's the food and groceries you love, delivered</span>
+                    <div class="search-box">
+                        <div class="form-outline" data-mdb-input-init>
+                            <i class="fas fa-location-crosshairs trailing" id="locate-icon"></i>
+                            <input type="text" id="form1" class="form-control form-icon-trailing"
+                                placeholder="street, postal code" />
+                            <label class="form-label" for="form1">Your street and street number</label>
+                        </div>
+                        <div>
+                            <button>Find food</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img class="foodpanda-picture" src="images/Foodpanda big picture.png" alt="foodpanda picture"
+                    height="400px;">
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <section>
+
+        <div class="section-one">
+            <h1>You prepare the food, we handle the rest</h1>
+            <img src="https://images.deliveryhero.io/image/foodpanda/home-vendor-pk.jpg?width=1264&height=808.96"
+                alt="">
+
+
+
+            <div class="content-box">
+                <h2>You prepare the food, we handle the rest</h2>
+                <p>
+                    List your restaurant or shop on FoodPanda. Would you like millions of new customers to enjoy your
+                    amazing food and groceries? So would we!
+                </p>
+                <p>
+                    Its simple: we list your menu and product lists online, help you process orders, pick them up, and
+                    deliver them to hungry pandas in a heartbeat!
+                </p>
+                <p>Interested? Lets start our partnership today!</p>
+                <a href="#" class="button">Get started</a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <div class="section-two">
+
+            <h1>Find us in these cities and many more!</h1>
+
+
+            <div class="flex-boxes">
+
+                <div class="box box-1">
+                    <img class="image"
+                        src="https://plus.unsplash.com/premium_photo-1697729758639-d692c36557b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGFraXN0YW4lMjBjaXRpZXMlMjBtYWluJTIwcGljdHVyZXMlMjBpc2xhbWFiYWR8ZW58MHx8MHx8fDA%3D"
+                        alt="islamabad">
+                    <button>Islamabad</button>
+                </div>
+
+                <div class="box box-1">
+                    <img class="image" src="https://live.staticflickr.com/3361/3522849377_ecab21a65a_b.jpg"
+                        alt="karachi">
+                    <button>Karachi</button>
+
+                </div>
+
+                <div class="box box-1">
+                    <img class="image" src="https://media-cdn.tripadvisor.com/media/photo-s/1d/03/69/77/lahor.jpg"
+                        alt="lahor">
+                    <button>Lahor</button>
+
+                </div>
+
+                <div class="box box-1">
+                    <img class="image"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Clock_Tower_Faisalabad_by_Usman_Nadeem.jpg/1200px-Clock_Tower_Faisalabad_by_Usman_Nadeem.jpg"
+                        alt="faisalabad">
+                    <button>Faisalabad</button>
+                </div>
+
+                <div class="box box-1">
+                    <img class="image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-khG5rfHlY91jeOcUQ5JfnRNtSDivSqDOfLrqk5zZ_C5Tnl72"
+                        alt="Rawalpindi">
+                    <button>Rawalpindi</button>
+                </div>
+
+                <div class="box box-1">
+                    <img class="image"
+                        src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHCL7kXbyAwcRLGakTKOcQa5nPA_Ituh9zxOeGRCoBi2t5LouS"
+                        alt="Abbottabad">
+                    <button>Abbottabad</button>
+
+                </div>
+
+                <div class="box box-1">
+                    <img class="image"
+                        src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfj_NPmPz7-kGbh2L5AO7xCqyQ-7PURWhOBu_hqFjCU1LN_fIJ"
+                        alt="Bahawalpur">
+                    <button>Bahawalpur</button>
+
+                </div>
+
+                <div class="box box-1">
+                    <img class="image"
+                        src="https://rentacarinlahore.pk/wp-content/uploads/2021/05/3c7bb06fd86b7410d0607b645be49882.jpg"
+                        alt="dera ghazi khan">
+                    <button>Dera Ghazi Khan</button>
+                </div>
+
+
+                <div class="box box-1">
+                    <img class="image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCAbhUhO4fC8nL5Fng5BugOgLOMQ6WsT3xkA&s"
+                        alt="Gujranwala">
+                    <button>Gujranwala</button>
+                </div>
+
+                <div class="box box-1">
+                    <img class="image" src="https://flypakistan.pk/assets/img/City/Hyderabad.jpg" alt="Hyderabad">
+                    <button>Hyderabad</button>
+
+                </div>
+
+                <div class="box box-1">
+                    <img class="image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgyyvsmQQHLcVj6G2fBeNPsrLFpTdQsPr-fg&s"
+                        alt="Larkana">
+                    <button>Larkana</button>
+
+                </div>
+
+                <div class="box box-1">
+                    <img class="image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST-_d73eTbzkjMgAmhAICZLSU69jIInJP7bQ&s"
+                        alt="Murree">
+                    <button>Murree</button>
+                </div>
+
+                <div class="box box-1">
+                    <img class="image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXKPdSkCBBG201_7wd-2jzFx0kPDQc_mP0RA&s"
+                        alt="Okara">
+                    <button>Okara</button>
+                </div>
+
+                <div class="box box-1">
+                    <img class="image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_eTe6prwACcYI9OxTOFmINJ0cuZ6aueqUAQ&s"
+                        alt="Quetta">
+                    <button>Quetta</button>
+
+                </div>
+
+                <div class="box box-1">
+                    <img class="image"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Sukkur_IBA_University_-_academic_block_I_%282%29.jpg/270px-Sukkur_IBA_University_-_academic_block_I_%282%29.jpg"
+                        alt="sukkar">
+                    <button>sukkar</button>
+
+                </div>
+
+                <div class="box box-1">
+                    <img class="image"
+                        src="https://abdulraheem.dk/wp-content/uploads/2020/07/8eb6677b45c2a0e1c7a986fea9b8ec28-850x534.jpg"
+                        alt="Sialkot">
+                    <button>Sialkot</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section>
+        <div class="section-three">
+            <h1>Put us in your pocket</h1>
+
+            <div class="my-container">
+
+                <div class="left">
+                    <h1>Download the food and groceries you love</h1>
+                    <div id="image-para">
+                        <img src="images/qr code.png" alt="qr code" height="140px">
+                        <p>It's all at your fingertips – the restaurants and shops you love. Find the right food and
+                            groceries
+                            to suit your mood, and make the first bite last. Go ahead, download us.</p>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <img src="https://images.deliveryhero.io/image/foodpanda/home-foodpanda-apps.png?width=1264&height=1004.88"
+                        alt="mobile picture" height="500px">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section>
+
+        <div class="section-four">
+            <h1>Take your office out to lunch</h1>
+            <img src="https://images.deliveryhero.io/image/foodpanda/home-corporate-pk.jpg?width=1264&height=808.96"
+                alt="">
+
+
+
+            <div class="content-box-four">
+                <h2>foodpanda for business</h2>
+                <p>
+                    Order lunch or fuel for work-from-home, late nights in the office, corporate events, client
+                    meetings, and much more.
+                </p>
+                <a href="#" class="button">Get started</a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <section>
+
+        <div class="section-five">
+            <div class="main-div">
+                <div>
+                    <h1>Order food and groceries online from the best restaurants and shops on foodpanda</h1>
+                    <p>Are you hungry? Did you have a long and stressful day? Interested in getting a cheesy pizza
+                        delivered
+                        to your office or looking to avoid the weekly shop? Then foodpanda Pakistan is the right
+                        destination
+                        for you! foodpanda offers you a long and detailed list of the best restaurants and shops near
+                        you to
+                        help make your every day easier.</p>
+                </div>
+
+
+                <div>
+                    <h1>What's new?</h1>
+                    <span><i class="fa-solid fa-check"></i> Wide variety of restaurants and shops, an abundance of
+                        cuisines & products.</span><br>
+                    <span><i class="fa-solid fa-check"></i> High quality delivery service.</span><br>
+                    <span><i class="fa-solid fa-check"></i> Live chat feature to give App users instant help when they
+                        need it.</span><br>
+                    <span><i class="fa-solid fa-check"></i> NEW: foodpanda grocery delivery! Discover the best shops,
+                        pharmacies, bakeries and more near
+                        you.</span>
+                </div>
+
+                <hr>
+
+                <div>
+                    <h2>Frequently Asked Questions</h2>
+                    <h2>How can I get foodpanda delivery?</h2>
+                    <p>To get foodpanda delivery, simply locate the restaurants and shops near you by typing in your
+                        address, browse through a variety of restaurants and cuisines, check menus and prices, choose
+                        your dishes and add them to the basket. Now you only need to checkout and make the payment. Soon
+                        your delicious food will arrive at your doorstep!</p>
+                </div>
+
+
+                <div>
+                    <h2>Which takeout restaurants open now near me?</h2>
+                    <p>You can check which takeout restaurants are open now near you by simply typing your address in
+                        the location bar on foodpanda and pressing search. You will see all the available restaurants
+                        and shops that deliver to your area.</p>
+                </div>
+
+
+                <div>
+                    <h2>Does foodpanda deliver 24 hours?</h2>
+                    <p>Yes, foodpanda in Pakistan delivers 24 hours. However, many restaurants may be unavailable for a
+                        late-night delivery. Please check which places in Pakistan deliver to you within 24 hours by
+                        using your address. You can also order groceries 24 hours a day via pandamart.</p>
+                </div>
+
+
+                <div>
+                    <h2>Can you pay cash for foodpanda?</h2>
+                    <p>Yes, you can pay cash on delivery for foodpanda in Pakistan.</p>
+                </div>
+
+                <div>
+                    <h2>How can I pay foodpanda online?</h2>
+                    <p>You can pay online while ordering at foodpanda Pakistan by using a credit or debit card or
+                        PayPal.</p>
+                </div>
+
+
+                <div>
+                    <h2>Can I order foodpanda for someone else?</h2>
+                    <p>Yes, foodpanda Pakistan allows you to place an order for someone else. During checkout, just
+                        update the name and delivery address of the person you're ordering for. Please keep in mind that
+                        if the delivery details are not correct and the order cannot be delivered, we won't be able to
+                        process a refund.</p>
+                </div>
+
+
+                <div>
+                    <h2>How much does foodpanda charge for delivery?</h2>
+                    <p>Delivery fee charged by foodpanda in Pakistan depends on many operational factors, most of all -
+                        location and the restaurant you are ordering from. You can always check the delivery fee while
+                        forming your order. Besides, you can filter the restaurants by clicking on the "Free Delivery"
+                        icon at the top of your restaurant listing.</p>
+                </div>
+
+
+                <div>
+                    <h2>What restaurants let you order online?</h2>
+                    <p>There are hundreds of restaurants on foodpanda Pakistan that let you order online. For example,
+                        <a href="">KFC,</a> <a href="">Pizza Hut,</a> <a href="">OPTP,</a> <a href="">Hardee's,</a> <a
+                            href="">Domino's,</a> <a href="">Kababjees</a> and many-many more! In order to
+                        check all the restaurants near you that deliver, just type in your address and discover all the
+                        available places.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>Does foodpanda have minimum order?</h2>
+                    <p>Yes, many restaurants have a minimum order. The minimum order value depends on the restaurant you
+                        order from and is indicated during your ordering process.</p>
+                </div>
+
+                <div>
+                    <h2>What is the difference between delivery and Pick-Up?</h2>
+                    <p>If you choose delivery, a foodpanda rider will collect your order from the restaurant and take it
+                        to your chosen delivery address. If you choose Pick-Up, you can takeaway your food directly from
+                        the restaurant for extra savings – and to jump to the front of the queue. Pick-Up orders are
+                        available for restaurants only.</p>
+                </div>
+
+                <h2>Order food and groceries online with foodpanda now and enjoy a great dining experience!</h2>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+
+
+        <div class="my-footer">
+            <div class="footer-had">
+                <hr>
+                <a href="">Laos</a>
+                <a href="">Cambodia</a>
+                <a href="">Myanmar</a>
+                <a href="">Thailand</a>
+                <a href="">Hong Kong</a>
+                <a href="">Taiwan</a>
+                <a href="">Malaysia</a>
+                <a href="">Philippines</a>
+                <a href="">Singapore</a>
+                <a href="">Bangladesh</a>
+                <hr>
+            </div>
+
+            <div class="footer-main">
+                <hr>
+                <h3>Foodpanda</h3>
+
+
+                <div class="ankar-container">
+
+                    <div>
+                        <ul>
+                            <li><a href="">Press</a></li>
+                            <li><a href="">pandapay Terms and Conditions</a></li>
+                            <li><a href="">Security</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Cashback Terms and Conditions</a></li>
+                            <li><a href="">Partner with Us</a></li>
+                            <li><a href="">All cities</a></li>
+                            <li><a href="">pandapro - Monthly Subscription Programme</a></li>
+                            <li><a href="">Ramzan deals</a></li>
+                            <li><a href="">Areas delivered in Lahore</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div>
+                        <ul>
+                            <li><a href="">Help Center</a></li>
+                            <li><a href="">Terms and Conditions</a></li>
+                            <li><a href="">Download foodpanda Apps</a></li>
+                            <li><a href="">Suggest a Restaurant</a></li>
+                            <li><a href="">All cuisines</a></li>
+                            <li><a href="">pandago - Request a Rider</a></li>
+                            <li><a href="">Update on COVID-19 in Pakistan</a></li>
+                            <li><a href="">foodpanda Home Chef</a></li>
+                            <li><a href="">Areas delivered in Karachi</a></li>
+                            <li><a href="">Areas delivered in Islamabad</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div>
+                        <ul>
+                            <li><a href="">Refunds with pandapay</a></li>
+                            <li><a href="">Privacy policy</a></li>
+                            <li><a href="">Human rights policy</a></li>
+                            <li><a href="">Corporate Customer</a></li>
+                            <li><a href="">foodpanda Magazine</a></li>
+                            <li><a href="">foodpanda Vouchers & Coupons</a></li>
+                            <li><a href="">pandamart Grocery Delivery</a></li>
+                            <li><a href="">Become an Affiliate</a></li>
+                            <li><a href="">Areas delivered in Gujranwala</a></li>
+                            <li><a href="">Areas delivered in Peshawar</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-last">
+                <div class="footer-logo">
+                    <hr>
+                    <img class="foodpanda-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv8DTzroSUojgwiIRK8WHRle9zz66hth1_VQ&s"
+                        alt="Foodpanda logo">
+                    <h1>foodpanda</h1>
+                    <img class="foort-img" src="images/hero.png" alt="">
+                </div>
+
+                <div class="social-media">
+                    <a href=""><i style="font-size: 30px;" class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i style="font-size: 30px;" class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </footer>
+
+
+     <script src="js/app.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.1.0/mdb.umd.min.js"></script>
+</body>
+
+</html>

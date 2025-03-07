@@ -1,0 +1,562 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.body{
+    background-color: #ffffff;
+}
+
+/* Navbar Start */
+
+
+.profile-icon {
+    color: black;
+}
+
+nav {
+    background-color: whitesmoke;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navbar one section */
+
+.navbar-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+nav img {
+    height: 30px;
+}
+
+nav h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff2b85;
+    margin-top: 8px;
+}
+
+/* Navbar one section */
+
+.navbar-two {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.my-button-one {
+    background-color: #ffffff;
+    color: #39434d;
+    padding: 6px 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: all .5s;
+}
+
+.my-button-two {
+    background-color: #ff2b85;
+    color: #ffffff;
+    padding: 6px 15px;
+    border-radius: 10px;
+    border: none;
+    transition: all .5s;
+}
+
+.my-button-one:hover {
+    transform: scale(1.1);
+}
+
+.my-button-two:hover {
+    transform: scale(1.1);
+}
+
+
+/* Navbar End  */
+
+
+
+
+
+/* header Start */
+
+
+.text-image-container {
+    background-color: #f7f7f7;
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-container {
+    /* background-color: #ff2b85; */
+    place-content: center;
+    height: 90vh;
+    width: 60%;
+
+}
+
+.text-button {
+    /* background-color: blue; */
+    width: 80%;
+    margin: auto;
+}
+
+.text-button span {
+    color: #333333;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#locate-icon {
+    color: #c12760;
+
+}
+
+.search-box {
+    box-shadow: 0 .188rem 1.25rem rgba(0, 0, 0, .1);
+    padding: 15px 15px;
+    width: 100%;
+    border-radius: 10px !important;
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    gap: 20px;
+}
+
+.search-box input {
+    padding: 5px;
+    width: 60%;
+    border: 0.1px solid rgb(139, 118, 118);
+    border-radius: 10px;
+}
+
+.text-button button {
+    background-color: #ff2b85;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    transition: all .5s;
+    width: 100px;
+}
+
+.text-button button:hover {
+    transform: scale(1.1);
+}
+
+
+.image-container {
+    /* background-color: blue; */
+    height: 90vh;
+    width: 40%;
+    place-content: center;
+}
+
+.foodpanda-picture {
+    /* background-color: #333333; */
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+/* Header end */
+
+
+/* section one strat */
+
+.section-one{
+    position: relative;
+    height: 70vh;
+    width: 100%;
+}
+
+
+.section-one h1{
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+    margin-top: 20px ;
+}
+
+.section-one img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.content-box {
+    position: absolute;
+    top: 290px;
+    left: 100px;
+    z-index: 2;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-box h2 {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 15px;
+  }
+  
+  .content-box p {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+
+
+  .button {
+    display: inline-block;
+    background-color: #ff2b85;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ff2b85;
+    transform: scale(1.1);
+  }
+
+/* section one end */
+
+
+/* section two strat */
+
+.section-two{
+    /* background-color: aqua; */
+    margin-top: 250px;
+    height: 100%;
+    width: 100%;
+}
+
+
+.section-two h1{
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+    margin-top: 20px ;
+}
+
+
+.flex-boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box{
+    /* background-color: #ff2b85; */
+    height: 200px;
+    width: 300px;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.box button{
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    top: -50px;
+    left: 10px;
+}
+
+
+/* section two end */
+
+
+
+/* section three strat */
+
+.section-three{
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.section-three h1{
+    padding: 50px;
+    font-weight: bold;
+    color: black;
+}
+
+.my-container{
+    background-color: #e21b70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 90vw;
+    border-radius: 20px;
+    margin: auto;
+}
+
+#image-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 80%;
+    margin: auto;
+    margin-top: -60px;
+    font-size: 1.1rem;
+}
+
+.left > h1{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+/* section three end */
+
+
+
+/* section four strat */
+
+
+.section-four{
+    position: relative;
+    height: 70vh;
+    width: 100%;
+}
+
+
+.section-four h1{
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+    margin-top: 20px ;
+}
+
+.section-four img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.content-box-four {
+    position: absolute;
+    top: 450px;
+    left: 100px;
+    z-index: 2;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-box-four h2 {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 15px;
+  }
+  
+  .content-box-four p {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+
+/* section four end */
+
+
+/* section five strat */
+
+
+.section-five{
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    margin-top: 250px;
+}
+
+.main-div{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    line-height: 25.6px;
+}
+
+.main-div h1{
+    color: black;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+.main-div h2{
+    color: #333333;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.main-div p{
+    color: #333333;
+    font-size: 1.2rem;
+}
+
+.main-div span{
+    color: #333333;
+    font-size: 1.2rem;
+}
+
+.main-div i{
+    color: #ff2b85;
+}
+
+.main-div p a{
+    color: #e21b70;
+}
+.main-div p a:hover{
+    color: #e21b70;
+    text-decoration: underline;
+}
+
+
+/* section five end */
+
+
+/* Footer */
+
+
+.my-footer{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-had{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.footer-had a{
+    color: #333333;
+    font-size: 1.3rem;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+
+.footer-main{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 2.5rem;
+    position: relative;
+}
+
+.footer-main h3{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footer-main :first-child{
+    margin-top: 0;
+}
+
+
+.footer-main a{
+    color: #333333;
+}
+.footer-main ul {
+    list-style: none;
+    text-align: start;
+    font-size: 1.1rem;
+}
+
+.footer-main a:hover{
+    text-decoration: underline;
+}
+
+.ankar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.footer-last{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.foodpanda-img {
+    height: 30px;
+}
+
+.footer-logo h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff2b85;
+    margin-top: 8px;
+}
+
+.foort-img {
+      height: 100px;
+}
+
+
+.social-media a{
+    color: black;
+    padding: 5px;
+}
