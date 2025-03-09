@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Dishes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+<body>
+
+  <h1 id="restaurant-name"></h1>
+  <div id="dish-list"></div>
+
+  <script>
+    let dishesList = JSON.parse(localStorage.getItem("dishes")) || {};
+    let resturantList = JSON.parse(localStorage.getItem("resturants")) || [];
+    
+    // Get restaurant ID from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const restaurantId = urlParams.get("restaurant");
+
+    // Find restaurant name
+    let restaurant = resturantList.find(rest => rest.id == restaurantId);
+    if (restaurant) {
+      document.getElementById("restaurant-name").innerText = `Dishes at ${restaurant.name}`;
+    }
+
+    // Render dishes for selected restaurant
+    function renderDishes() {
+      let dishContainer = document.getElementById("dish-list");
+      let dishes = dishesList[restaurantId] || [];
+
+      if (dishes.length === 0) {
+        dishContainer.innerHTML = "<p>No dishes available.</p>";
+        return;
+      }
+
+      dishContainer.innerHTML = dishes
+        .map(
+          (dish) => `
+          <div class="card" style="width: 18rem">
+            <img src="${dish.logo}" class="card-img-top" alt="${dish.name}">
+            <div class="card-body">
+              <h5 class="card-title">${dish.name}</h5>
+              <p class="card-text">${dish.description}</p>
+            </div>
+          </div>
+        `
+        )
+        .join("");
+    }
+
+    renderDishes();
+  </script>
+<script src="js/app.js"></script>
+</body>
+</html>

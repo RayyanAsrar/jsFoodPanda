@@ -189,7 +189,9 @@ iframe {
   left: 0;
   background-color: rgb(255 255 255 / 26%);
 }
-
+.pink{
+  background-color: #e94185;
+}
 .wrap-login100 {
   width: 500px;
   border-radius: 10px;
