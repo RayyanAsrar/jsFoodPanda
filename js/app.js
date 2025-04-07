@@ -54,7 +54,7 @@
 // // console.log(student[key]);
 // //  }
 //****************************** */
-// I USED AI IN THE END TO OPTIMIZE THE CODE SO IT MAY LOOK A BIT DIFFICULT TO UNDERSTAND
+// I USED AI IN THE END TO OPTIMIZE THE CODE SO IT MAY LOOK A BIT EASY TO UNDERSTAND
 //********************************************************************************** */ 
 // Navigation Functions
 function navTohome() {
